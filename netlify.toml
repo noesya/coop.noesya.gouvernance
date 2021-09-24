@@ -1,3 +1,7 @@
+[[redirects]]
+  from = "/cgv"
+  to = "/documents/noesya-cgv-1.0.pdf"
+
 [[headers]]
   for = "/*"
   [headers.values]
