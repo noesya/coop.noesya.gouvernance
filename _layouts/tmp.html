@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "fr" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include seo.html %}
+
+    <!-- Preload -->
+    <link rel="preload" href="/assets/css/main.css" as="style">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style media="screen">
+        body {
+            background-color: black;
+        }
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1 img {
+            width: 300px;
+        }
+    </style>
+  </head>
+  <body>
+      <h1><img src="/assets/images/chouette.jpg" alt="Noesya"></h1>
+  </body>
+</html>

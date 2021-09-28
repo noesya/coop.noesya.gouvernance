@@ -1,9 +1,5 @@
 ---
-layout: page
-title: "Home"
+layout: tmp
+title: Accueil
 permalink: /
 ---
-
-## Home sweet home.
-
-I'm in /_pages/index.md
