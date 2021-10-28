@@ -3,3 +3,21 @@ presets:
     formats: [webp, original] # Order matters!
     widths: [300, 600, 1000, 1400, 2000]
     dimension_attributes: true
+
+  owl:
+    formats: [webp, original]
+    widths: [153, 208, 298, 306, 316, 355, 596]
+    dimension_attributes: true
+    sizes:
+      mobile: calc(50vw - 60px)
+      tablet: 50vw
+      desktop: calc(33vw - 100px)
+
+  owl_footer:
+    formats: [webp, original]
+    widths: [153, 208, 298, 306, 316, 355, 596]
+    dimension_attributes: true
+    sizes:
+      mobile: 100px
+      tablet: 40vw
+      desktop: 15vw
