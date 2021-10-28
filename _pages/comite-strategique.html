@@ -30,10 +30,12 @@ team:
           Elie est fondateur et président d'Opquast, auteur, formateur et conférencier.  À ce titre, il intervient dans de nombreuses manifestations, entreprises et cursus de formation en France et à l’étranger. Qualiticien de formation, il s’est spécialisé sur la création de check-lists et référentiels qualité pour le secteur numérique. Il est notamment co-rédacteur des deux premières versions du RGAA (Référentiel Général d’Accessibilité pour les Administrations), de plusieurs référentiels de bonnes pratiques Opquast, et de nombreux autres référentiels publics ou privés. Il participe au comité stratégique sur l'orientation en matières de communs numériques.
 ---
 
-{% for person in page.team %}
-    <article>
-        <img src="{{person.photo}}" alt="">
-        <h2>{{person.name}}</h2>
-        <p>{{person.description}}</p>
-    </article>
-{% endfor %}
+<div class="row">
+    {% for person in page.team %}
+        <article class="col-md-6">
+            <img src="{{person.photo}}" alt="">
+            <h2>{{person.name}}</h2>
+            <p>{{person.description}}</p>
+        </article>
+    {% endfor %}
+</div>

@@ -3,28 +3,31 @@ title: Documents
 permalink: /documents
 ---
 
-<h2>Catégories</h2>
+<p>Catégories</p>
 <ul>
 {% for category in site.categories %}
     <li><a href="{{category.url}}">{{category.title}}</a></li>
 {% endfor %}
 </ul>
 
-<h2>Années</h2>
+<p>Années</p>
 <ul>
 {% for year in site.years %}
     <li><a href="{{year.url}}">{{year.title}}</a></li>
 {% endfor %}
 </ul>
 
-{% for document in site.documents %}
-    {% assign category = site.categories | where: 'slug', document.category | first %}
-    {% assign year = site.years | where: 'slug', document.year | first %}
-    <article>
-        {{document.title}}<br>
-        {{document.size}}<br>
-        {{category.title}}<br>
-        {{year.title}}<br>
-        <a href="{{document.file}}" target="_blank" rel="noreferrer">Download</a>
-    </article>
-{% endfor %}
+
+<div class="row">
+    {% for document in site.documents %}
+        {% assign category = site.categories | where: 'slug', document.category | first %}
+        {% assign year = site.years | where: 'slug', document.year | first %}
+        <div class="col-md-3 col-6">
+            {{document.title}}<br>
+            {{document.size}}<br>
+            {{category.title}}<br>
+            {{year.title}}<br>
+            <a href="{{document.file}}" target="_blank" rel="noreferrer">Download</a>
+        </div>
+    {% endfor %}
+</div>
