@@ -1,0 +1,39 @@
+---
+title: Comité stratégique
+description: >
+    Le comité stratégique représente nos parties prenantes et les multiples facettes de notre travail : Université, recherche, impact social, création artistique, artisanat, code, qualité, finance, sobriété... Nous lui présentons chaque année un rapport d'activité (disponible en ligne) auquel le comité répond par une liste de points de vigilances, et de recommandations. Les membres sont bénévoles.
+permalink: /comite-strategique
+team:
+    - name: Nadine Chartrain
+      photo: /assets/images/team/nadine-chartrain.jpg
+      description: >
+          Nadine est Directrice Administrative et Financière (DAF) et fondatrice d'Efigie, un cabinet de conseil et organisme de formation agréé. Elle accompagne des dirigeants d'entreprise, du business plan au pilotage opérationnel et financier.
+    - name: François Charton
+      photo: /assets/images/team/francois-charton.jpg
+      description: >
+          François est Research Engineer au Facebook Artificial Intelligence Research (FAIR), où il travaille sur les mathématiques, la causalité et les réseaux de neurone. Polytechnicien, mathématicien, statisticien, développeur, il a d'abord eu un parcours d'entrepreneuriat dans les médias, où il a créé, développé puis vendu Carthage, un éditeur de logiciels dédiés à l'achat média.
+    - name: Marie-Laure Cuvelier
+      photo: /assets/images/team/marie-laure-cuvelier.jpg
+      description: >
+          Marie-Laure est conseillère régionale de Nouvelle-Aquitaine, secrétaire générale de France Tiers-Lieux et cofondatrice de la Coopérative des Tiers-lieux, une SCIC à 3 vocations : labo d’expérimentations, école, et réseau de tiers-lieux.
+    - name: Marlène Dulaurans
+      photo: /assets/images/team/marlene-dulaurans.jpg
+      description: >
+          Marlène est maître de conférences en sciences de la communication à l'Université de Bordeaux Montaigne, et chercheuse associée au laboratoire du MICA. Ses travaux portent sur l'étude des nouveaux impératifs de coopération et de communication dans les organisations et les sociétés dans le contexte de la mondialisation et du développement des technologies numériques. Elle s'intéresse particulièrement aux médias sociaux, aux pratiques émergentes et aux nouvelles formes d'expression sociale/citoyenne, à l'analyse du discours. Elle dirige le programme de recherche sur le cyber-harcèlement "Cybernetic", en collaboration avec la cellule NTech de la Gendarmerie Nationale.
+    - name: Alan Gampel
+      photo: /assets/images/team/alan-gampel.jpg
+      description: >
+          Alan est pianiste concertiste, docteur en musicologie, diplômé de Stanford et de la Sorbonne. Tant par le biais de la Fondation Joy2learn qu'il a créée en 2000, que par ses projets actuels au Kremlin-Bicêtre et à l'Ecole Massillon, il associe pratique des arts et pédagogie en faveur de l'épanouissement des enfants.
+    - name: Elie Sloïm
+      photo: /assets/images/team/elie-sloim.jpg
+      description: >
+          Elie est fondateur et président d'Opquast, auteur, formateur et conférencier.  À ce titre, il intervient dans de nombreuses manifestations, entreprises et cursus de formation en France et à l’étranger. Qualiticien de formation, il s’est spécialisé sur la création de check-lists et référentiels qualité pour le secteur numérique. Il est notamment co-rédacteur des deux premières versions du RGAA (Référentiel Général d’Accessibilité pour les Administrations), de plusieurs référentiels de bonnes pratiques Opquast, et de nombreux autres référentiels publics ou privés. Il participe au comité stratégique sur l'orientation en matières de communs numériques.
+---
+
+{% for person in page.team %}
+    <article>
+        <img src="{{person.photo}}" alt="">
+        <h2>{{person.name}}</h2>
+        <p>{{person.description}}</p>
+    </article>
+{% endfor %}

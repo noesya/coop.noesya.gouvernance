@@ -7,17 +7,19 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
       layout: "page"
 
 collections:
   pages:
     output: true
+  documents:
+    output: false
+  categories:
+    output: true
+    permalink: /documents/:title
+  years:
+    output: true
+    permalink: /documents/:title
 
 plugins:
   - jekyll-minifier

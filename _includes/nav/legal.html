@@ -1,0 +1,9 @@
+<nav aria-label="Pages légales" class="legal">
+  <ul>
+    {% for item in site.data.menus.legal %}
+    <li>
+      <a href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

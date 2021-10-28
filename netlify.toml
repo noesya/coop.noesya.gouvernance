@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/cgv"
-  to = "/documents/noesya-cgv-1.0.pdf"
+  to = "/documents/2021/noesya-cgv-1.0.pdf"
 
 [[headers]]
   for = "/*"

@@ -7,14 +7,14 @@
     {% include seo.html %}
 
     <!-- Preload -->
-    <link rel="preload" href="/assets/css/main.css" as="style">
+    <link rel="preload" href="https://www.noesya.coop/assets/css/main.css" as="style">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://www.noesya.coop/assets/css/main.css">
   </head>
   <body>
     {% include header.html %}
-    <main aria-label="Content">
+    <main aria-label="Content" class="{{ page.class | default: layout.class }}">
       {{ content }}
     </main>
     {% include footer.html %}

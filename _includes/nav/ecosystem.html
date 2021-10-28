@@ -1,0 +1,17 @@
+<nav aria-label="Navigation dans l'écosystème" class="ecosystem">
+  <ul>
+    {% for item in site.data.ecosystem.sites %}
+    <li>
+      {% if item.url %}
+        {% if item.url == site.url %}
+          {{ item.title }}
+        {% else %}
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        {% endif %}
+      {% else %}
+        <span title="Ce site sera disponible bientôt..." aria-hidden="true">{{ item.title }}</span>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

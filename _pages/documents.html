@@ -1,0 +1,18 @@
+---
+title: Documents
+permalink: /documents
+---
+
+<h2>Catégories</h2>
+<ul>
+{% for category in site.categories %}
+    <li><a href="{{category.url}}">{{category.title}}</a></li>
+{% endfor %}
+</ul>
+
+<h2>Années</h2>
+<ul>
+{% for year in site.years %}
+    <li><a href="{{year.url}}">{{year.title}}</a></li>
+{% endfor %}
+</ul>

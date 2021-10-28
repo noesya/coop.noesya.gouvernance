@@ -1,0 +1,9 @@
+<nav aria-label="Contacts" class="contacts">
+  <ul>
+    {% for item in site.data.menus.contacts %}
+    <li>
+        <a href="{{item.url}}" target="_blank" rel="noreferrer" class="{{item.class}}">{{item.title}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

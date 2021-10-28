@@ -1,12 +1,12 @@
 primary:
-  - title: Home
-    url: /
-  - title: About
-    url: /about
+  - title: Comité stratégique
+    url: /comite-strategique
+  - title: Documents
+    url: /documents
 legal:
   - title: Mentions légales
-    url: /mentions-legales
+    url: https://www.noesya.coop/mentions-legales
   - title: Politique de confidentialité
-    url: /politique-de-confidentialite
+    url: https://www.noesya.coop/politique-de-confidentialite
   - title: Gestion des cookies
-    url: /gestion-des-cookies
+    url: https://www.noesya.coop/gestion-des-cookies
