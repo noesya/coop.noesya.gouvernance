@@ -16,3 +16,15 @@ permalink: /documents
     <li><a href="{{year.url}}">{{year.title}}</a></li>
 {% endfor %}
 </ul>
+
+{% for document in site.documents %}
+    {% assign category = site.categories | where: 'slug', document.category | first %}
+    {% assign year = site.years | where: 'slug', document.year | first %}
+    <article>
+        {{document.title}}<br>
+        {{document.size}}<br>
+        {{category.title}}<br>
+        {{year.title}}<br>
+        <a href="{{document.file}}" target="_blank" rel="noreferrer">Download</a>
+    </article>
+{% endfor %}
