@@ -5,29 +5,19 @@ permalink: /documents
 
 <p>Catégories</p>
 <ul>
-{% for category in site.categories %}
-    <li><a href="{{category.url}}">{{category.title}}</a></li>
-{% endfor %}
+    {% assign categories = site.categories | sort: 'position' %}
+    {% for category in categories %}
+        <li><a href="{{category.url}}">{{category.title}}</a></li>
+    {% endfor %}
 </ul>
 
 <p>Années</p>
 <ul>
-{% for year in site.years %}
-    <li><a href="{{year.url}}">{{year.title}}</a></li>
-{% endfor %}
+    {% assign years = site.years | reverse %}
+    {% for year in years %}
+        <li><a href="{{year.url}}">{{year.title}}</a></li>
+    {% endfor %}
 </ul>
 
-
-<div class="row">
-    {% for document in site.documents %}
-        {% assign category = site.categories | where: 'slug', document.category | first %}
-        {% assign year = site.years | where: 'slug', document.year | first %}
-        <div class="col-md-3 col-6">
-            {{document.title}}<br>
-            {{document.size}}<br>
-            {{category.title}}<br>
-            {{year.title}}<br>
-            <a href="{{document.file}}" target="_blank" rel="noreferrer">Download</a>
-        </div>
-    {% endfor %}
-</div>
+{% assign documents = site.documents %}
+{% include documents.html documents=documents %}

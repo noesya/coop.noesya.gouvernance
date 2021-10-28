@@ -8,6 +8,18 @@ defaults:
       path: ""
     values:
       layout: "page"
+  -
+    scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+  -
+    scope:
+      path: ""
+      type: "years"
+    values:
+      layout: "year"
 
 collections:
   pages:
