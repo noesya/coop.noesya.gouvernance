@@ -1,4 +1,4 @@
 ---
-title: Économique
+title: Économiques
 position: 3
 ---

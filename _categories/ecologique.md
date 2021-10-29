@@ -1,4 +1,4 @@
 ---
-title: Écologique
+title: Écologiques
 position: 4
 ---

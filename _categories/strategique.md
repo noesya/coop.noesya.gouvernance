@@ -1,4 +1,4 @@
 ---
-title: Stratégique
+title: Stratégiques
 position: 1
 ---

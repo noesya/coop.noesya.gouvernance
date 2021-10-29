@@ -1,4 +1,4 @@
 ---
-title: Juridique
+title: Juridiques
 position: 2
 ---

@@ -1,4 +1,4 @@
 ---
-title: Éthique
+title: Éthiques
 position: 5
 ---
