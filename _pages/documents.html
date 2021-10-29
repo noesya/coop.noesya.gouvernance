@@ -1,22 +1,23 @@
 ---
 title: Documents
+class: documents
 permalink: /documents
 ---
 
 <p>Catégories</p>
 <ul>
-    {% assign categories = site.categories | sort: 'position' %}
-    {% for category in categories %}
-        <li><a href="{{category.url}}">{{category.title}}</a></li>
-    {% endfor %}
+  {% assign categories = site.categories | sort: 'position' %}
+  {% for category in categories %}
+    <li><a href="{{category.url}}">{{category.title}}</a></li>
+  {% endfor %}
 </ul>
 
 <p>Années</p>
 <ul>
-    {% assign years = site.years | reverse %}
-    {% for year in years %}
-        <li><a href="{{year.url}}">{{year.title}}</a></li>
-    {% endfor %}
+  {% assign years = site.years | reverse %}
+  {% for year in years %}
+    <li><a href="{{year.url}}">{{year.title}}</a></li>
+  {% endfor %}
 </ul>
 
 {% assign documents = site.documents %}
