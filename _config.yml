@@ -20,12 +20,18 @@ defaults:
       type: "years"
     values:
       layout: "year"
+  -
+    scope:
+      path: ""
+      type: "documents"
+    values:
+      layout: "document"
 
 collections:
   pages:
     output: true
   documents:
-    output: false
+    output: true
   categories:
     output: true
     permalink: /documents/:title
