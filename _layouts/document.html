@@ -3,17 +3,17 @@ layout: default
 ---
 
 <header>
-    <div>
-        <p class="h1"><a href="/documents">Documents</a></p>
-        <h1>{{ page.title }}</h1>
-    </div>
+  <div>
+    <p class="h1"><a href="/documents">Documents</a></p>
+    <h1>{{ page.title }}</h1>
+  </div>
 </header>
 
 <section>
-    {% assign category = site.categories | where: 'slug', document.category | first %}
-    {% assign year = site.years | where: 'slug', document.year | first %}
-    {{document.size}}<br>
-    {{category.title}}<br>
-    {{year.title}}<br>
-    <a href="{{document.file}}" target="_blank" rel="noreferrer">Téléchargement</a>
+  {% assign category = site.categories | where: 'slug', document.category | first %}
+  {% assign year = site.years | where: 'slug', document.year | first %}
+  {{document.size}}<br>
+  {{category.title}}<br>
+  {{year.title}}<br>
+  <a href="{{document.file}}" target="_blank" rel="noreferrer">Téléchargement</a>
 </section>
