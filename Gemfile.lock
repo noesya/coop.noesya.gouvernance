@@ -1,3 +1,12 @@
+PATH
+  remote: ../jekyll-theme-noesya
+  specs:
+    jekyll-theme-noesya (1.0.0)
+      jekyll (~> 4.0)
+      jekyll-minifier
+      jekyll-sitemap
+      jekyll_picture_tag
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -93,9 +102,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-minifier
-  jekyll-sitemap
-  jekyll_picture_tag
+  jekyll-theme-noesya!
 
 BUNDLED WITH
-   2.2.12
+   2.2.29
