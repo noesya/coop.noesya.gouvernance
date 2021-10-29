@@ -1,24 +1,33 @@
 ---
 title: Documents
 class: documents
+layout: default
 permalink: /documents
 ---
 
-<p>Catégories</p>
-<ul>
-  {% assign categories = site.categories | sort: 'position' %}
-  {% for category in categories %}
-    <li><a href="{{category.url}}">{{category.title}}</a></li>
-  {% endfor %}
-</ul>
+<header>
+  <h1>{{page.title}}</h1>
+</header>
 
-<p>Années</p>
-<ul>
-  {% assign years = site.years | reverse %}
-  {% for year in years %}
-    <li><a href="{{year.url}}">{{year.title}}</a></li>
-  {% endfor %}
-</ul>
+<div>
+  <h2>Catégories</h2>
+  <ul>
+    {% assign categories = site.categories | sort: 'position' %}
+    {% for category in categories %}
+      <li><a href="{{category.url}}">{{category.title}}</a></li>
+    {% endfor %}
+  </ul>
 
-{% assign documents = site.documents %}
-{% include documents.html documents=documents %}
+  <h2>Années</h2>
+  <ul>
+    {% assign years = site.years | reverse %}
+    {% for year in years %}
+      <li><a href="{{year.url}}">{{year.title}}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<section>
+  {% assign documents = site.documents %}
+  {% include documents.html documents=documents %}
+</section>

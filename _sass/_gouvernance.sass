@@ -1,3 +1,13 @@
+.commite
+    section + section
+        @include grid(2)
+        article
+            picture
+                aspect-ratio: 1 / 1
+                display: block
+                margin-bottom: $grid-gutter
+                max-width: 50%
+
 .documents
     ul
         display: flex
@@ -7,8 +17,31 @@
         margin-bottom: $grid-gutter/2
         margin-right: $grid-gutter/2
         a
-            border: 1px solid $border-color
+            border: 1px solid $border-color-on-gray
             border-radius: 4px
             font-size: px2rem(22)
             padding: 5px $grid-gutter
             text-decoration: none
+            transition: background .3s ease, color .3s ease
+            &:hover
+                background-color: $black
+                color: $white
+    header + div
+        @include container
+        h2
+            font-family: $font-family-serif
+            font-size: px2rem(25)
+            font-weight: 400
+            margin-bottom: $grid-gutter
+    section
+        @include grid(4)
+        article
+            margin-bottom: $grid-gutter
+
+@media (prefers-color-scheme: dark)
+    .documents
+        li a
+            border-color: $border-color-on-gray-reverse
+            &:hover
+                background-color: $white
+                color: $black

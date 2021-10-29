@@ -28,7 +28,7 @@ defaults:
       path: ""
       type: "documents"
     values:
-      layout: "document"
+      layout: "page"
 
 collections:
   pages:
@@ -40,7 +40,7 @@ collections:
     permalink: /documents/:title
   years:
     output: true
-    permalink: /documents/:title
+    permalink: /documents/:title/
 
 plugins:
   - jekyll-minifier
