@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem 'jekyll'
+gem 'jekyll-theme-noesya', path: '../jekyll-theme-noesya'
 
 group :jekyll_plugins do
     # https://github.com/rbuchberger/jekyll_picture_tag
