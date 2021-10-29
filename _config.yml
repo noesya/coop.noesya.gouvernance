@@ -1,6 +1,7 @@
 url: https://gouvernance.noesya.coop
 title: Gouvernance Noesya
 lang: fr
+
 theme: jekyll-theme-noesya
 
 defaults:

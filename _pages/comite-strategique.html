@@ -30,22 +30,27 @@ team:
           Elie est fondateur et président d'Opquast, auteur, formateur et conférencier.  À ce titre, il intervient dans de nombreuses manifestations, entreprises et cursus de formation en France et à l’étranger. Qualiticien de formation, il s’est spécialisé sur la création de check-lists et référentiels qualité pour le secteur numérique. Il est notamment co-rédacteur des deux premières versions du RGAA (Référentiel Général d’Accessibilité pour les Administrations), de plusieurs référentiels de bonnes pratiques Opquast, et de nombreux autres référentiels publics ou privés. Il participe au comité stratégique sur l'orientation en matières de communs numériques.
 ---
 
+<header>
+  <h1>{{page.title}}</h1>
+</header>
 
-<p>
+<section>
+  <p>
     Le comité stratégique représente nos parties prenantes et les multiples facettes de notre travail : Université, recherche, impact social, création artistique, artisanat, code, qualité, finance, sobriété... Nous lui présentons chaque année un rapport d'activité (disponible en ligne) auquel le comité répond par une liste de points de vigilances, et de recommandations. Les membres sont bénévoles.
-</p>
-
-{% assign document = site.documents | where: 'category', 'strategique' | last %}
-
-<a href="{{document.file}}" target="_blank" rel="noreferrer">
+  </p>
+  {% assign document = site.documents | where: 'category', 'strategique' | last %}
+  <a href="{{document.file}}" target="_blank" rel="noreferrer">
     {{document.title}}
     {{document.size}}
-</a>
+  </a>
+</section>
 
-{% for person in page.team %}
+<section>
+  {% for person in page.team %}
     <article>
-        <img src="{{person.photo}}" alt="">
-        <h2>{{person.name}}</h2>
-        <p>{{person.description}}</p>
+      <img src="{{person.photo}}" alt="">
+      <h2>{{person.name}}</h2>
+      <p>{{person.description}}</p>
     </article>
-{% endfor %}
+  {% endfor %}
+</section>
