@@ -56,9 +56,17 @@
             font-weight: 400
             margin-bottom: $grid-gutter
     section
-        @include grid(4)
-        article
-            margin-bottom: $grid-gutter
+        @include grid(2)
+        @include media-breakpoint-up(md)
+            grid-gap: 40px 40px
+        @include media-breakpoint-up(lg)
+            grid-template-columns: repeat(3, 1fr)
+        @include media-breakpoint-up(xl)
+            grid-template-columns: repeat(4, 1fr)
+        a
+            @include button
+            @include media-breakpoint-down(sm)
+                margin-bottom: $grid-gutter
 
 @media (prefers-color-scheme: dark)
     .documents

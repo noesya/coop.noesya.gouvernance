@@ -1,11 +1,26 @@
 @mixin button
     background-color: $bg-secondary-color
+    border-radius: 4px
     color: $primary
+    display: block
     font-size: px2rem(22)
     line-height: px2rem(36)
     padding: $grid-gutter
     text-decoration: none
+    transition: background .3s ease
+    &:hover
+        background-color: $border-color
     &::after
         content: none
     span
         color: $secondary-on-gray
+        @include media-breakpoint-up(md)
+            float: right
+
+    @media (prefers-color-scheme: dark)
+        background-color: $bg-secondary-color-reverse
+        color: $white
+        &:hover
+            background-color: $border-color-reverse
+        span
+            color: $secondary-on-gray-reverse
