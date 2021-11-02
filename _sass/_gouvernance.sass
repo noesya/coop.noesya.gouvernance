@@ -1,12 +1,33 @@
+@import "tools/mixins/button"
+
+.index
+    header
+        @include grid(12)
+        div:first-child
+            grid-column: 1/9
+        div:last-child
+            grid-column: 9/13
+            grid-row-start: 2
+
 .commite
+    section:first-of-type
+        @include grid(12)
+        p
+            grid-column: 1/8
+        a
+            @include button
+            grid-column: 9/13
     section + section
         @include grid(2)
         article
+            margin-bottom: $grid-gutter * 2
             picture
                 aspect-ratio: 1 / 1
                 display: block
                 margin-bottom: $grid-gutter
                 max-width: 50%
+            h2
+                margin-bottom: $grid-gutter
 
 .documents
     ul
