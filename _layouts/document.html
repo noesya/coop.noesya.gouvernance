@@ -1,5 +1,6 @@
 ---
 layout: default
+class: document
 ---
 
 <header>
@@ -9,11 +10,18 @@ layout: default
   </div>
 </header>
 
-<section>
-  {% assign category = site.categories | where: 'slug', document.category | first %}
-  {% assign year = site.years | where: 'slug', document.year | first %}
-  {{document.size}}<br>
-  {{category.title}}<br>
-  {{year.title}}<br>
-  <a href="{{document.file}}" target="_blank" rel="noreferrer">Téléchargement</a>
-</section>
+{% assign category = site.categories | where: 'slug', page.category | first %}
+{% assign year = site.years | where: 'slug', page.year | first %}
+<article>
+  <a href="{{page.file}}" target="_blank" rel="noreferrer">
+    <div>
+      <i class="icon icon-{{page.category}}"></i>
+      {{category.title}}
+    </div>
+    <div>
+      Téléchargement le document<br>
+      <span>{{page.size}} • {{year.title}}</span>
+      <p>{{ page.description }}</p>
+    </div>
+  </a>
+</article>

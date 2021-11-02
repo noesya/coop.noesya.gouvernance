@@ -68,6 +68,19 @@
             @include media-breakpoint-down(sm)
                 margin-bottom: $grid-gutter
 
+.document
+    padding-bottom: $grid-gutter * 2
+    @include media-breakpoint-up(md)
+        padding-bottom: $grid-gutter * 4
+    @include media-breakpoint-up(xl)
+        padding-bottom: $grid-gutter * 8
+    article
+        @include container
+        @include grid(2)
+        a
+            @include button
+            @include grid(2)
+
 @media (prefers-color-scheme: dark)
     .documents
         li a

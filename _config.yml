@@ -28,7 +28,7 @@ defaults:
       path: ""
       type: "documents"
     values:
-      layout: "page"
+      layout: "document"
 
 collections:
   pages:
