@@ -85,6 +85,19 @@
         a
             @include button
             @include grid(2)
+        div > .icon
+            display: inline-block
+            font-size: 10rem
+            margin-bottom: $grid-gutter/2
+        div:first-child
+            text-align: center
+            span
+                border: 1px solid $border-color-on-gray
+                border-radius: 4px
+                float: none
+                font-size: px2rem(22)
+                padding: 5px $grid-gutter
+                text-decoration: none
 
 @media (prefers-color-scheme: dark)
     .documents
