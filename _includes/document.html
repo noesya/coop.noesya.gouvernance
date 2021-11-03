@@ -1,9 +1,12 @@
 {% assign category = site.categories | where: 'slug', document.category | first %}
 {% assign year = site.years | where: 'slug', document.year | first %}
 <a href="{{document.url}}">
+  <div>
+    <i class="icon icon--{{document.category}}-thin"></i>
+  </div>
   {{document.title}}
   <br>
   <span>
-  {{document.size}} • {{category.title}} {{year.title}}
+  {{document.size}} • {{year.title}}
   </span>
 </a>

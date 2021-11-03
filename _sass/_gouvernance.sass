@@ -44,15 +44,28 @@
         margin-bottom: $grid-gutter/2
         margin-right: $grid-gutter/2
         a
-            border: 1px solid $border-color-on-gray
+            align-items: center
+            border: 1px solid $border-color
             border-radius: 4px
+            display: flex
             font-size: px2rem(22)
-            padding: 5px $grid-gutter
+            padding: 10px 20px
             text-decoration: none
+            text-transform: lowercase
             transition: background .3s ease, color .3s ease
             &:hover
                 background-color: $black
                 color: $white
+            .icon
+                flex-shrink: 0
+                font-size: px2rem(20)
+                height: 20px
+            @media (prefers-color-scheme: dark)
+                border-color: $border-color-on-gray
+
+        .icon
+            margin-right: 15px
+
     header + div
         @include container
         h2
@@ -70,6 +83,13 @@
             grid-template-columns: repeat(4, 1fr)
         a
             @include button
+            div
+                align-items: center
+                aspect-ratio: 1 / 1
+                display: flex
+                justify-content: center
+            .icon
+                font-size: 8rem
             @include media-breakpoint-down(sm)
                 margin-bottom: $grid-gutter
 
@@ -85,19 +105,45 @@
         a
             @include button
             @include grid(2)
-        div > .icon
-            display: inline-block
-            font-size: 10rem
-            margin-bottom: $grid-gutter/2
         div:first-child
             text-align: center
-            span
+            div
+                align-items: center
+                aspect-ratio: 1 / 1
+                display: flex
+                justify-content: center
+                margin-bottom: $grid-gutter/2
+                position: relative
+                .icon
+                    font-size: 8rem
+                span
+                    align-items: center
+                    background-color: $black
+                    border-radius: 50%
+                    bottom: 15%
+                    color: $white
+                    display: flex
+                    height: 64px
+                    justify-content: center
+                    position: absolute
+                    right: 15%
+                    width: 64px
+                    .icon
+                        font-size: px2rem(20)
+                        margin-right: 0
+            > span
+                align-items: center
                 border: 1px solid $border-color-on-gray
                 border-radius: 4px
-                float: none
+                color: $black
+                display: inline-flex
                 font-size: px2rem(22)
-                padding: 5px $grid-gutter
+                padding: 10px $grid-gutter
                 text-decoration: none
+                .icon
+                    margin-right: 10px
+        div:last-child
+            align-self: center
 
 @media (prefers-color-scheme: dark)
     .documents

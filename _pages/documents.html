@@ -14,7 +14,12 @@ permalink: /documents
   <ul>
     {% assign categories = site.categories | sort: 'position' %}
     {% for category in categories %}
-      <li><a href="{{category.url}}">{{category.title}}</a></li>
+      <li>
+        <a href="{{category.url}}">
+          <i class="icon icon--{{category.slug}}"></i>
+          {{category.title}}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 
