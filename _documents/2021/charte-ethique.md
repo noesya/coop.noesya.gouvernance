@@ -1,7 +1,7 @@
 ---
-title: Charte éthique
+title: Statuts (.docx)
 year: 2021
-category: ethique
+category: juridique
 file: /assets/documents/2021/statuts.docx
-size: 83ko
+size: 126ko
 ---
