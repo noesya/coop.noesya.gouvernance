@@ -1,0 +1,52 @@
+.document
+    padding-bottom: $grid-gutter * 2
+    @include media-breakpoint-up(md)
+        padding-bottom: $grid-gutter * 4
+    @include media-breakpoint-up(xl)
+        padding-bottom: $grid-gutter * 8
+    article
+        @include container
+        @include grid(12)
+        a
+            @include button
+            @include grid(12)
+            grid-column: 1/8
+
+            > div:first-child
+                grid-column: 1/6
+                text-align: center
+                @include media-breakpoint-down(sm)
+                    margin-bottom: $grid-gutter
+                div
+                    @include picto
+                    margin-bottom: $grid-gutter/2
+                    position: relative
+                    > .icon
+                        &::before
+                            font-size: px2rem(130)
+                    span
+                        align-items: center
+                        background-color: $black
+                        border-radius: 50%
+                        bottom: 15%
+                        color: $white
+                        display: flex
+                        height: 64px
+                        justify-content: center
+                        position: absolute
+                        right: 15%
+                        width: 64px
+                        .icon
+                            &::before
+                                font-size: px2rem(20)
+                > span
+                    @include tag
+
+            > div:last-child
+                align-self: center
+                grid-column: 6/13
+                p
+                    font-size: px2rem(22)
+                    line-height: px2rem(36)
+                    &:last-of-type
+                        margin-top: $grid-gutter

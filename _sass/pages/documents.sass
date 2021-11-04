@@ -1,0 +1,39 @@
+.documents
+    ul
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: $grid-gutter*2
+    li
+        margin-bottom: 20px
+        margin-right: 20px
+        a
+            @include tag
+            transition: background .3s ease, color .3s ease
+            &:hover
+                background-color: $black
+                color: $white
+                @media (prefers-color-scheme: dark)
+                    background-color: $white
+                    color: $black
+    header + div
+        @include container
+        h2
+            font-family: $font-family-serif
+            font-size: px2rem(25)
+            font-weight: 400
+            margin-bottom: $grid-gutter
+    section
+        @include grid(2)
+        @include media-breakpoint-up(md)
+            grid-gap: 40px 40px
+        @include media-breakpoint-up(lg)
+            grid-template-columns: repeat(3, 1fr)
+        @include media-breakpoint-up(xl)
+            grid-template-columns: repeat(4, 1fr)
+        a
+            @include button
+            padding: 30px
+            div
+                @include picto
+            @include media-breakpoint-down(sm)
+                margin-bottom: $grid-gutter

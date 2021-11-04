@@ -4,10 +4,12 @@
     color: $primary
     display: block
     font-size: px2rem(22)
-    line-height: px2rem(36)
+    line-height: 1.65
     padding: $grid-gutter
     text-decoration: none
     transition: background .3s ease
+    @include media-breakpoint-down(sm)
+        font-size: px2rem(18)
     &:hover
         background-color: $border-color
     &::after

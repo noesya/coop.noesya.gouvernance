@@ -13,7 +13,12 @@ presets:
   person:
     crop: '1:1'
     dimension_attributes: true
+    widths: [145, 290, 310, 810]
     formats: [webp, original]
+    sizes:
+      mobile: 145px
+      tablet: 142px
+      desktop: 310px
 
   owl:
     formats: [webp, original]

@@ -1,0 +1,18 @@
+@mixin tag
+    align-items: center
+    border: 1px solid $border-color
+    border-radius: 4px
+    display: inline-flex
+    font-size: px2rem(22)
+    padding: 10px 20px
+    text-decoration: none
+    text-transform: lowercase
+    > .icon
+        flex-shrink: 0
+        height: 20px
+        line-height: 1
+        margin-right: 10px
+        &::before
+            font-size: px2rem(20)
+    @media (prefers-color-scheme: dark)
+        border-color: $border-color-on-gray

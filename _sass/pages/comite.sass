@@ -1,0 +1,35 @@
+.comite
+    section:first-of-type
+        @include grid(12)
+        p
+            grid-column: 1/8
+        a
+            @include button
+            align-self: start
+            display: flex
+            grid-column: 9/13
+            .icon
+                flex-shrink: 0
+                margin-right: 20px
+            span
+                flex-shrink: 0
+                margin-left: 20px
+                white-space: nowrap
+    section + section
+        @include grid(2)
+        article
+            margin-bottom: $grid-gutter * 2
+            picture
+                aspect-ratio: 1 / 1
+                display: block
+                margin-bottom: $grid-gutter
+                max-width: calc(50% - #{$grid-gutter} / 2)
+                img
+                    display: block
+            h2
+                margin-bottom: $grid-gutter
+            p
+                @include media-breakpoint-up(md)
+                    margin-right: $grid-gutter
+                @include media-breakpoint-up(lg)
+                    margin-right: $grid-gutter*2
