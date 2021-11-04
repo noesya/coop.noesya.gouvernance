@@ -5,7 +5,7 @@ lang: fr
 
 theme: jekyll-theme-noesya
 options:
-  menu_burger: true
+  menu_burger: false
   notes: false # Needed to use notes in sections-with-notes includes
   paragraphs_index: false # Needed to add index to paragraphs
   hover_navigation_links: false # Needed to use nav-between-pages
