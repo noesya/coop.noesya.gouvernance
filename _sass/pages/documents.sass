@@ -33,7 +33,14 @@
         a
             @include button
             padding: 30px
-            div
+            div:first-child
                 @include picto
             @include media-breakpoint-down(sm)
+                display: flex
                 margin-bottom: $grid-gutter
+                padding-left: 15px
+                div:first-of-type
+                    flex: 1
+                div:last-of-type
+                    flex: 2
+                    padding-left: 15px
