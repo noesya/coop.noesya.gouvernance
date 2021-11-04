@@ -1,7 +1,8 @@
 ---
-title: Statuts (.docx)
+title: Charte éthique
+description: Principes et engagements éthiques de la coopérative noesya.
 year: 2021
-category: juridique
-file: /assets/documents/2021/statuts.docx
+category: ethique
+file: /assets/documents/2021/charte-ethique.pdf
 size: 126ko
 ---
