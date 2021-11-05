@@ -34,6 +34,10 @@
                 max-width: calc(50% - #{$grid-gutter} / 2)
                 img
                     display: block
+                    filter: grayscale(1)
+                    transition: filter 0.33s
+                    &:hover
+                        filter: grayscale(0)
             h2
                 margin-bottom: $grid-gutter
             p
