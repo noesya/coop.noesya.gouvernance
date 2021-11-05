@@ -1,24 +1,27 @@
 media_queries:
   mobile: 'max-width: 576px'
-  tablet: 'min-width: 576px'
+  tablet: 'min-width: 577px'
   laptop: 'min-width: 992px'
   desktop: 'min-width: 1200px'
+  xl_desktop: 'min-width: 1440px'
 
 presets:
   default:
     formats: [webp, original] # Order matters!
-    widths: [300, 600, 1000, 1400, 2000]
+    widths: [375, 576, 640, 750, 768, 1080, 1152, 1200, 1366, 1440, 1536, 1920]
     dimension_attributes: true
 
   person:
     crop: '1:1'
     dimension_attributes: true
-    widths: [145, 290, 310, 810]
+    widths: [206, 265, 284, 290, 310, 412, 530, 620]
     formats: [webp, original]
     sizes:
       mobile: 145px
       tablet: 142px
-      desktop: 310px
+      laptop: 206px
+      desktop: 265px
+      xl_desktop: 310px
 
   owl:
     formats: [webp, original]
