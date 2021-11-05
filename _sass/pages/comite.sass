@@ -19,6 +19,14 @@
         @include grid(2)
         article
             margin-bottom: $grid-gutter * 2
+            @include media-breakpoint-up(md)
+                margin-bottom: $grid-gutter * 3
+            @include media-breakpoint-up(lg)
+                margin-bottom: $grid-gutter * 4
+            @include media-breakpoint-up(xl)
+                margin-bottom: $grid-gutter * 5
+            @include media-breakpoint-up(xxl)
+                margin-bottom: $grid-gutter * 7
             picture
                 aspect-ratio: 1 / 1
                 display: block
@@ -29,6 +37,9 @@
             h2
                 margin-bottom: $grid-gutter
             p
+                font-size: px2rem(22)
+                line-height: px2rem(36)
+                margin-bottom: 0
                 @include media-breakpoint-up(md)
                     margin-right: $grid-gutter
                 @include media-breakpoint-up(lg)
