@@ -8,19 +8,27 @@
         @include container
         @include grid(12)
         a
+            @include media-breakpoint-up(md)
+                display: flex
+                padding: 50px 70px
+            @include media-breakpoint-down(lg)
+                grid-column: 1/13
+            @include media-breakpoint-down(md)
+                background-color: transparent !important
+                padding: 0
             @include button
-            @include grid(12)
             grid-column: 1/8
-
+            padding: $grid-gutter
             > div:first-child
-                grid-column: 1/6
-                text-align: center
-                @include media-breakpoint-down(sm)
+                margin-right: 90px
+                @include media-breakpoint-down(md)
                     margin-bottom: $grid-gutter
                 div
-                    @include picto
+                    display: table
                     margin-bottom: $grid-gutter/2
                     position: relative
+                    &:first-child
+                        margin-bottom: 40px
                     > .icon
                         &::before
                             font-size: px2rem(130)
@@ -28,13 +36,13 @@
                         align-items: center
                         background-color: $black
                         border-radius: 50%
-                        bottom: 15%
+                        bottom: -21px
                         color: $white
                         display: flex
                         height: 64px
                         justify-content: center
                         position: absolute
-                        right: 15%
+                        right: -34px
                         width: 64px
                         @media (prefers-color-scheme: dark)
                             background-color: $white
@@ -44,10 +52,10 @@
                                 font-size: px2rem(20)
                 > span
                     @include tag
+                    padding: 10px
 
             > div:last-child
-                align-self: center
-                grid-column: 6/13
+                vertical-align: top
                 p
                     font-size: px2rem(22)
                     line-height: px2rem(36)
