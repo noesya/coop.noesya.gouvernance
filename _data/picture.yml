@@ -1,8 +1,8 @@
 media_queries:
   mobile: 'max-width: 576px'
-  tablet: 'min-width: 577px'
-  laptop: 'min-width: 992px'
-  desktop: 'min-width: 1200px'
+  tablet: 'max-width: 991px'
+  laptop: 'max-width: 1199px'
+  desktop: 'max-width: 1439px'
   xl_desktop: 'min-width: 1440px'
 
 presets:
@@ -25,18 +25,22 @@ presets:
 
   owl:
     formats: [webp, original]
-    widths: [153, 208, 298, 306, 316, 355, 596]
+    widths: [353, 366, 378, 550, 630, 706, 732]
     dimension_attributes: true
     sizes:
-      mobile: calc(50vw - 60px)
-      tablet: 50vw
-      desktop: calc(33vw - 100px)
+      mobile: 315px
+      tablet: 189px
+      laptop: 275px
+      desktop: 353px
+      xl_desktop: 366px
 
   owl_footer:
     formats: [webp, original]
-    widths: [153, 208, 298, 306, 316, 355, 596]
+    widths: [150, 182, 208, 224, 300, 364, 440]
     dimension_attributes: true
     sizes:
-      mobile: 100px
-      tablet: 40vw
-      desktop: 15vw
+      mobile: 104px
+      tablet: 220px
+      laptop: 112px
+      desktop: 150px
+      xl_desktop: 182px
