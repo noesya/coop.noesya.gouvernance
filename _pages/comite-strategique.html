@@ -51,7 +51,7 @@ team:
 <section>
   {% for person in page.team %}
     <article>
-      {% picture person {{person.photo}} --img alt="{{person.name}}" %}
+      {% picture person {{person.photo}} --img alt="{{person.name}}" loading="lazy" %}
       <h2>{{person.name}}</h2>
       <p>{{person.description}}</p>
     </article>
