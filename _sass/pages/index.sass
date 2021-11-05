@@ -1,4 +1,10 @@
 .index
+    background-attachment: fixed
+    background-image: url('../images/chouette/crop.png')
+    background-position: 96% bottom
+    background-repeat: no-repeat
+    @media (min-width: $grid-width + $grid-gutter * 8)
+        background-position: calc(100vw - 600px) bottom
     header
         @include grid(12)
         min-height: 100vh
@@ -8,12 +14,3 @@
         position: relative
         div:first-child
             grid-column: 1/9
-        div:last-child
-            grid-column: 9/13
-        img
-            bottom: 0
-            display: block
-            position: absolute
-            right: 8%
-
-
