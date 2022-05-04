@@ -1,19 +1,12 @@
-# jekyll-starter
+# Gouvernance
 
-## Plugins
-* Jekyll Minifier
-* Jekyll Picture Tag
-* Jekyll Sitemap
 
-Template
-Pour faire la mise à jour :
-
+## Install
 ```
-git remote add template https://github.com/noesya/jekyll
-git fetch --all
-git merge template/main --allow-unrelated-histories
+bundle
 ```
 
-- chouette fixed en mobile
-- footer lien
-- option d'order pour la nav
+## Start
+```
+bundle exec jekyll s
+```
