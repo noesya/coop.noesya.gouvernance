@@ -11,6 +11,6 @@ class: documents
 </header>
 
 <section>
-  {% assign documents = site.documents | where: 'year', page.slug %}
+  {% assign documents = site.documents | where: 'year', page.slug | sort: 'title' %}
   {% include documents.html documents=documents %}
 </section>
