@@ -1,5 +1,5 @@
 ---
-title: Recommandations du comité stratégique
+title: Recommandations du comité stratégique Q2
 description: Actes de la réunion du 8 mars 2021
 year: 2021
 category: strategique

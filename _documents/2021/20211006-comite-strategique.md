@@ -1,5 +1,5 @@
 ---
-title: Recommandations du comité stratégique
+title: Recommandations du comité stratégique de lancement
 description: Actes de la réunion du 4 octobre 2021
 year: 2021
 category: strategique
