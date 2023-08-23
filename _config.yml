@@ -41,7 +41,7 @@ collections:
     output: true
   documents:
     output: true
-    permalink: /documents/:year/:title
+    permalink: /documents/:path
   categories:
     output: true
     permalink: /documents/:title
