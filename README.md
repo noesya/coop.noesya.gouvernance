@@ -3,7 +3,7 @@
 
 ## Install
 ```
-bundle
+bundle install
 ```
 
 ## Start
