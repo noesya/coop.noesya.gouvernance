@@ -33,6 +33,6 @@ permalink: /documents
 </div>
 
 <section>
-  {% assign documents = site.documents %}
+  {% assign documents = site.documents | sort: 'year' | reverse %}
   {% include documents.html documents=documents %}
 </section>
