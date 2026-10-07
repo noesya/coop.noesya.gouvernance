@@ -9,8 +9,6 @@ sites:
       url: https://lab.noesya.coop
     - title: réseau
       url: https://reseau.noesya.coop
-    - title: works
-      url: https://works.noesya.coop
     - title: sane
       url: https://sane.noesya.coop
     - title: maison
